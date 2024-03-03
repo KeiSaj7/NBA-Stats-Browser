@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBA Stats Browser", "NBA Stats Browser.csproj", "{89464618-6A3A-4FD0-A3FE-03ED57B3A526}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89464618-6A3A-4FD0-A3FE-03ED57B3A526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89464618-6A3A-4FD0-A3FE-03ED57B3A526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89464618-6A3A-4FD0-A3FE-03ED57B3A526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89464618-6A3A-4FD0-A3FE-03ED57B3A526}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE0469FB-83D6-4D72-8E35-CB4DD0DD4A4A}
+	EndGlobalSection
+EndGlobal
