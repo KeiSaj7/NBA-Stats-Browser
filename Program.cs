@@ -1,3 +1,9 @@
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Http;
+using System.Configuration;
+
 namespace NBA_Stats_Browser
 {
     internal static class Program
@@ -8,10 +14,31 @@ namespace NBA_Stats_Browser
         [STAThread]
         static void Main()
         {
+            ApplicationConfiguration.Initialize();
+
+            // Create service collection and configure our services
+            var host = Host.CreateDefaultBuilder()
+                .ConfigureServices(ConfigureServices)
+                .Build();
+
+            var form1 = host.Services.GetRequiredService<Form1>();
+
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(form1);
+        }
+        private static void ConfigureServices(HostBuilderContext context, IServiceCollection services)
+        {
+            services.AddTransient<Form1>();
+            services.AddTransient<TeamService>();
+            services.AddTransient<PlayerService>();
+            services.AddMemoryCache();
+            services.AddHttpClient("APIClient",client =>
+            {
+                client.BaseAddress = new Uri("https://api.balldontlie.io/v1/");
+                client.DefaultRequestHeaders.Add("Authorization", "29d1f5cd-8fcf-44ea-a77f-1c5df888a0e4");
+            });
+
         }
     }
 }

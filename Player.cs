@@ -23,24 +23,14 @@ public class Player
     public Team Team { get; set; }
 }
 
-public class Team
-{
-    public int Id { get; set; }
-    public string Conference { get; set; }
-    public string Division { get; set; }
-    public string City { get; set; }
-    public string Name { get; set; }
-    public string Full_name { get; set; }
-    public string Abbreviation { get; set; }
-}
 public class Meta
 {
-    public int next_cursor { get; set; }
-    public int per_page { get; set; }
+    public int Next_cursor { get; set; }
+    public int Per_page { get; set; }
 }
-public class Root<T>
+public class PlayersResponse
 {
-    public List<T> Data { get; set; }
+    public IEnumerable<Player> Data { get; set; }
     public Meta Meta { get; set; }
 }
 
