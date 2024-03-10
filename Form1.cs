@@ -15,51 +15,80 @@ public partial class Form1 : Form
             PlayerChoiceComboBox.Enabled = false;
             await _teamService.GetTeamsAsync();
             PlayerChoiceComboBox.Enabled = true;
+            PlayerChoiceComboBox.Focus();
+
         };
-        
+
+    }
+
+    public void loadForm(object Form)
+    {
+        if (this.panelMain.Controls.Count > 0)
+        {
+            this.panelMain.Controls.Clear();
+        }
+        Form f = Form as Form;
+        f.TopLevel = false;
+        f.Dock = DockStyle.Fill;
+        this.panelMain.Controls.Add(f);
+        this.panelMain.Tag = f;
+        f.Show();
     }
 
     private void button1_Click(object sender, EventArgs e)
     {
-        _teamService.ClearCache();
-        _playerService.ClearCache();
+        var input = PlayerChoiceComboBox.Text.Trim();
+        var player = _playerService.PlayerValidation(input);
+
+        if(player != null)
+        {
+            //
+            _playerService.ClearCache();
+            _playerService.AddSelectedPlayerToCache(player);
+
+            // Form creation
+            loadForm(new Form2(_teamService, _playerService));
+        }
+        else
+        {
+        }
 
     }
 
-    private async void PlayerChoiceComboBox_TextChanged(object sender, EventArgs e)
+
+    private async void PlayerChoiceComboBox_TextUpdate(object sender, EventArgs e)
     {
         // Get the user input
         string userInput = PlayerChoiceComboBox.Text;
 
-        // Check if user deleted all input
-        if(string.IsNullOrEmpty(userInput))
+
+        if (PlayerChoiceComboBox.Text.Length > 2)
         {
-            _playerService.ClearCache();
+            
             PlayerChoiceComboBox.Items.Clear();
-            return;
+            PlayerChoiceComboBox.SelectionStart = PlayerChoiceComboBox.Text.Length;
+            var players = await _playerService.GetPlayersByName(userInput);
+            if (players != null)
+            {
+                // Show players first and last name in the combobox
+                foreach (var player in players)
+                {
+                    PlayerChoiceComboBox.Items.Add(player.FullNameAndTeam);
+                }
+                PlayerChoiceComboBox.DroppedDown = true;
+                PlayerChoiceComboBox.SelectedIndex = -1;
+                PlayerChoiceComboBox.Text = userInput;
+                PlayerChoiceComboBox.SelectionStart = PlayerChoiceComboBox.Text.Length;
+            }
         }
-        if (userInput.Length < 3)
+        else
         {
+            PlayerChoiceComboBox.Items.Clear();
             _playerService.ClearCache();
-            return;
-        }
+            PlayerChoiceComboBox.SelectedIndex = -1;
+            PlayerChoiceComboBox.DroppedDown = false;
+            PlayerChoiceComboBox.SelectionStart = PlayerChoiceComboBox.Text.Length;
 
-        // Get players 
-        var players = await _playerService.GetPlayersByName(userInput);
-        
-        // Save the cursor position
-        int cursorPos = PlayerChoiceComboBox.SelectionStart;
-        PlayerChoiceComboBox.Items.Clear();
-
-        // Add players to the combobox
-        foreach (var player in players)
-        {
-            PlayerChoiceComboBox.Items.Add(player.First_Name + " " + player.Last_Name + "Team: " + player.Team.Abbreviation);
         }
-        if (PlayerChoiceComboBox.Items.Count > 0)
-        {
-            PlayerChoiceComboBox.SelectionStart = cursorPos;
-        }
-
     }
 }

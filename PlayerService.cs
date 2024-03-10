@@ -21,6 +21,8 @@ public class PlayerService
 
     private readonly string cacheKey = "Player";
 
+    private readonly string selectedPlayerKey = "SelectedPlayer";
+    
     private readonly HttpClient _client;
 
     public PlayerService(IMemoryCache cache, IHttpClientFactory httpClientFactory)
@@ -54,8 +56,27 @@ public class PlayerService
             AddToCache(cacheKey, players);
             return players;
         }
-        return cachedPlayers.Where(p => p.First_Name.Contains(input) || p.Last_Name.Contains(input));
+        var cachedPlayersList = cachedPlayers.Where(p => (p.First_Name + " " + p.Last_Name).ToLower().Contains(input.Trim().ToLower()));
+        if (cachedPlayersList.Any()) {
+            return cachedPlayersList.ToList();
+        }
+        else return null;
 
+    }
+
+    public Player PlayerValidation(string input)
+    {
+        var cachedPlayers = GetFromCache<Player>(cacheKey);
+        if (cachedPlayers != null)
+        {
+            var player = cachedPlayers.FirstOrDefault(p => p.FullNameAndTeam == input);
+            if (player != null)
+            {
+                return player;
+            }
+           
+        }
+        return null;
     }
 
 
@@ -76,6 +97,23 @@ public class PlayerService
         {
             return null;
         }
+    }
+
+    public Player GetSelectedPlayerFromCache()
+    {
+        if (_cache.TryGetValue(this.selectedPlayerKey, out Player value))
+        {
+            return value;
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    public void AddSelectedPlayerToCache(Player player)
+    {
+        _cache.Set(this.selectedPlayerKey, player, cacheEntryOptions);
     }
 
     public void ClearCache()

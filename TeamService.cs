@@ -50,6 +50,12 @@ public class TeamService
         _cache.Set(key, value, cacheEntryOptions);
     }
 
+    public Team GetTeamById(int id)
+    {
+        var cachedTeams = GetFromCache<Team>(cacheKey);
+        return cachedTeams.FirstOrDefault(t => t.Id == id);
+    }
+
     public IEnumerable<T> GetFromCache<T>(string key)
     {
         if (_cache.TryGetValue(key, out IEnumerable<T> value))

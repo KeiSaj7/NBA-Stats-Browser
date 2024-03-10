@@ -19,9 +19,12 @@ public class Player
     public int? Draft_Year { get; set; }
     public int? Draft_Round { get; set; }
     public int? Draft_Number { get; set; }
-    public int TeamId { get; set; }
     public Team Team { get; set; }
+
+    public string FullNameAndTeam => $"{First_Name} {Last_Name} | {Team?.Abbreviation}";
+
 }
+
 
 public class Meta
 {
