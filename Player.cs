@@ -21,9 +21,13 @@ public class Player
     public int? Draft_Number { get; set; }
     public Team Team { get; set; }
 
-    public string FullNameAndTeam => $"{First_Name} {Last_Name} | {Team?.Abbreviation}";
+    public string GetFullNameAndTeam()
+    {
+        return $"{First_Name} {Last_Name} | {Team?.Abbreviation}";
+    }
 
 }
+
 
 
 public class Meta

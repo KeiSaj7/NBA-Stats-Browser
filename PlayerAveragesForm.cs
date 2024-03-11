@@ -1,20 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿namespace NBA_Stats_Browser;
 
-namespace NBA_Stats_Browser
+public partial class PlayerAveragesForm : Form
 {
-    public partial class PlayerAveragesForm : Form
+    private readonly PlayerService _playerService;
+    public PlayerAveragesForm(PlayerService playerService)
     {
-        public PlayerAveragesForm()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+        _playerService = playerService;
+    }
+
+    private void PlayerAveragesForm_Load(object sender, EventArgs e)
+    {
+        PlayerAverage avg = _playerService.GetSelectedPlayerAvgFromCache();
+        List<PlayerAverage> avgs = new List<PlayerAverage>() { avg };
+        this.dataGridView.DataSource = avgs;
     }
 }

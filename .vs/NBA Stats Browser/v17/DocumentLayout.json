@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|c:\\users\\jasiek\\desktop\\programing\\github\\nba stats browser\\teaminfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:teaminfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|c:\\users\\jasiek\\desktop\\programing\\github\\nba stats browser\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|c:\\users\\jasiek\\desktop\\programing\\github\\nba stats browser\\playeraveragesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:playeraveragesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\linecheckform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:linecheckform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\playeraveragesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:playeraveragesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\teaminfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:teaminfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\teaminfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:teaminfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\playerinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:playerinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|c:\\users\\jasiek\\desktop\\programing\\github\\nba stats browser\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|c:\\users\\jasiek\\desktop\\programing\\github\\nba stats browser\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\playerinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:playerinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,32 +43,8 @@
       "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:playerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|c:\\users\\jasiek\\desktop\\programing\\github\\nba stats browser\\teaminfoform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:teaminfoform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|c:\\users\\jasiek\\desktop\\programing\\github\\nba stats browser\\teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:teamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\teaminfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:teaminfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\playerinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:playerinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\playeraveragesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:playeraveragesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89464618-6A3A-4FD0-A3FE-03ED57B3A526}|NBA Stats Browser.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,17 +54,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowC8AAAAAAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAhwEYAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-02T22:13:30.212Z",
               "IsPinned": true,
@@ -84,170 +72,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
               "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\Form2.cs",
               "RelativeToolTip": "Form2.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwCoAAAAFAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCwAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T16:02:52.229Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "PlayerInfoForm.cs",
               "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\PlayerInfoForm.cs",
               "RelativeDocumentMoniker": "PlayerInfoForm.cs",
               "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\PlayerInfoForm.cs",
               "RelativeToolTip": "PlayerInfoForm.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAArwBUAAABAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T17:19:05.621Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "TeamInfoForm.cs",
               "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\TeamInfoForm.cs",
               "RelativeDocumentMoniker": "TeamInfoForm.cs",
               "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\TeamInfoForm.cs",
               "RelativeToolTip": "TeamInfoForm.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAhwBIAAAA0AAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAswBoAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-10T17:37:07.531Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TeamService.cs",
-              "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\TeamService.cs",
-              "RelativeDocumentMoniker": "TeamService.cs",
-              "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\TeamService.cs",
-              "RelativeToolTip": "TeamService.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAwwDgAAAAFAAAA",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T17:42:15.203Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T22:42:18.892Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PlayerService.cs",
-              "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\PlayerService.cs",
-              "RelativeDocumentMoniker": "PlayerService.cs",
-              "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\PlayerService.cs",
-              "RelativeToolTip": "PlayerService.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAwwHEAAAAoAAAA",
+              "DocumentIndex": 2,
+              "Title": "LineCheckForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\LineCheckForm.cs",
+              "RelativeDocumentMoniker": "LineCheckForm.cs",
+              "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\LineCheckForm.cs [Design]",
+              "RelativeToolTip": "LineCheckForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T19:39:52.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T20:10:20.406Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\Player.cs",
-              "RelativeDocumentMoniker": "Player.cs",
-              "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\Player.cs",
-              "RelativeToolTip": "Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T17:41:00.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Team.cs",
-              "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\Team.cs",
-              "RelativeDocumentMoniker": "Team.cs",
-              "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\Team.cs",
-              "RelativeToolTip": "Team.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T17:55:35.854Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TeamInfoForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\TeamInfoForm.cs",
-              "RelativeDocumentMoniker": "TeamInfoForm.cs",
-              "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\TeamInfoForm.cs [Design]",
-              "RelativeToolTip": "TeamInfoForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T23:39:12.764Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TeamInfoForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\TeamInfoForm.Designer.cs",
-              "RelativeDocumentMoniker": "TeamInfoForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\TeamInfoForm.Designer.cs",
-              "RelativeToolTip": "TeamInfoForm.Designer.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAADgvyQAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T17:37:02.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PlayerInfoForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\PlayerInfoForm.cs",
-              "RelativeDocumentMoniker": "PlayerInfoForm.cs",
-              "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\PlayerInfoForm.cs [Design]",
-              "RelativeToolTip": "PlayerInfoForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T17:14:11.513Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\Form2.cs [Design]",
-              "RelativeToolTip": "Form2.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T23:36:32.814Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Form2.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\Form2.Designer.cs",
-              "RelativeDocumentMoniker": "Form2.Designer.cs",
-              "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\Form2.Designer.cs",
-              "RelativeToolTip": "Form2.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T23:57:43.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "PlayerAveragesForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\PlayerAveragesForm.cs",
               "RelativeDocumentMoniker": "PlayerAveragesForm.cs",
               "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\PlayerAveragesForm.cs [Design]",
               "RelativeToolTip": "PlayerAveragesForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T23:39:47.553Z"
+              "WhenOpened": "2024-03-11T20:10:08.052Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayerInfoForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\PlayerInfoForm.cs",
+              "RelativeDocumentMoniker": "PlayerInfoForm.cs",
+              "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\PlayerInfoForm.cs [Design]",
+              "RelativeToolTip": "PlayerInfoForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T18:34:40.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerAveragesForm.cs",
+              "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\PlayerAveragesForm.cs",
+              "RelativeDocumentMoniker": "PlayerAveragesForm.cs",
+              "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\PlayerAveragesForm.cs",
+              "RelativeToolTip": "PlayerAveragesForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T21:50:24.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PlayerService.cs",
+              "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\PlayerService.cs",
+              "RelativeDocumentMoniker": "PlayerService.cs",
+              "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\PlayerService.cs",
+              "RelativeToolTip": "PlayerService.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAADgv1gAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T19:39:52.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TeamInfoForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\TeamInfoForm.cs",
+              "RelativeDocumentMoniker": "TeamInfoForm.cs",
+              "ToolTip": "C:\\Users\\Jasiek\\Desktop\\programing\\github\\NBA Stats Browser\\TeamInfoForm.cs [Design]",
+              "RelativeToolTip": "TeamInfoForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T23:39:12.764Z"
             }
           ]
         }

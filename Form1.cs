@@ -35,7 +35,7 @@ public partial class Form1 : Form
         f.Show();
     }
 
-    private void button1_Click(object sender, EventArgs e)
+    private async void button1_Click(object sender, EventArgs e)
     {
         var input = PlayerChoiceComboBox.Text.Trim();
         var player = _playerService.PlayerValidation(input);
@@ -45,6 +45,7 @@ public partial class Form1 : Form
             //
             _playerService.ClearCache();
             _playerService.AddSelectedPlayerToCache(player);
+            await _playerService.GetPlayerAverages();
 
             // Form creation
             loadForm(new Form2(_teamService, _playerService));
@@ -73,7 +74,7 @@ public partial class Form1 : Form
                 // Show players first and last name in the combobox
                 foreach (var player in players)
                 {
-                    PlayerChoiceComboBox.Items.Add(player.FullNameAndTeam);
+                    PlayerChoiceComboBox.Items.Add(player.GetFullNameAndTeam());
                 }
                 PlayerChoiceComboBox.DroppedDown = true;
                 PlayerChoiceComboBox.SelectedIndex = -1;

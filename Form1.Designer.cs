@@ -51,8 +51,6 @@ partial class Form1
         // 
         // PlayerChoiceComboBox
         // 
-        PlayerChoiceComboBox.AutoCompleteMode = AutoCompleteMode.Suggest;
-        PlayerChoiceComboBox.FlatStyle = FlatStyle.Popup;
         PlayerChoiceComboBox.FormattingEnabled = true;
         PlayerChoiceComboBox.ImeMode = ImeMode.Alpha;
         PlayerChoiceComboBox.Location = new Point(444, 205);

@@ -55,6 +55,6 @@ public partial class Form2 : Form
 
     private void PlayerAveragesButton_Click(object sender, EventArgs e)
     {
-        loadForm(new PlayerAveragesForm());
+        loadForm(new PlayerAveragesForm(_playerService));
     }
 }

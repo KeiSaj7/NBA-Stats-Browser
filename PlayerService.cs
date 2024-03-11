@@ -22,6 +22,8 @@ public class PlayerService
     private readonly string cacheKey = "Player";
 
     private readonly string selectedPlayerKey = "SelectedPlayer";
+
+    private readonly string playerAveragesKey = "PlayerAverages";
     
     private readonly HttpClient _client;
 
@@ -64,12 +66,29 @@ public class PlayerService
 
     }
 
+    public async Task CheckLines()
+    {
+        int selectedPlayerId = GetSelectedPlayerFromCache().Id;
+        //var response = await _client.GetFromJsonAsync<>($"{_client.BaseAddress}stats?per_page=100&seasons=2023&player_ids[]={selectedPlayerId}");
+    }
+
+    public async Task GetPlayerAverages()
+    {
+        int selectedPlayerId = GetSelectedPlayerFromCache().Id;
+        var response = await _client.GetFromJsonAsync<PlayerAverageResponse>($"{_client.BaseAddress}season_averages?season=2023&player_ids[]={selectedPlayerId}");
+        if (response == null) return;
+        PlayerAverage playerAverages = response.Data.FirstOrDefault();
+        AddToCache(playerAveragesKey, playerAverages);
+    }
+
+
+
     public Player PlayerValidation(string input)
     {
         var cachedPlayers = GetFromCache<Player>(cacheKey);
         if (cachedPlayers != null)
         {
-            var player = cachedPlayers.FirstOrDefault(p => p.FullNameAndTeam == input);
+            var player = cachedPlayers.FirstOrDefault(p => p.GetFullNameAndTeam() == input);
             if (player != null)
             {
                 return player;
@@ -114,6 +133,18 @@ public class PlayerService
     public void AddSelectedPlayerToCache(Player player)
     {
         _cache.Set(this.selectedPlayerKey, player, cacheEntryOptions);
+    }
+
+    public PlayerAverage GetSelectedPlayerAvgFromCache()
+    {
+        if (_cache.TryGetValue(this.playerAveragesKey, out PlayerAverage value))
+        {
+            return value;
+        }
+        else
+        {
+            return null;
+        }
     }
 
     public void ClearCache()

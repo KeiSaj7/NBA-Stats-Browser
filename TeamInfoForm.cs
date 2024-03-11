@@ -26,6 +26,6 @@ public partial class TeamInfoForm : Form
     {
         Team team = _playerService.GetSelectedPlayerFromCache().Team;
         List<Team> teams = new List<Team>() { team };
-        dataGridView1.DataSource = teams;
+        dataGridView.DataSource = teams;
     }
 }
