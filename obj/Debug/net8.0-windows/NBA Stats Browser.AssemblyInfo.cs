@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NBA Stats Browser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be394ac9c0a1aea53c63d6575d32f9d8f29a86f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78c634d541124205bf3412fc4b7c33d09ebad524")]
 [assembly: System.Reflection.AssemblyProductAttribute("NBA Stats Browser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NBA Stats Browser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

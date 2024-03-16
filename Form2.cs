@@ -50,7 +50,7 @@ public partial class Form2 : Form
 
     private void LineCheckButton_Click(object sender, EventArgs e)
     {
-        loadForm(new LineCheckForm());
+        loadForm(new LineCheckForm(_playerService));
     }
 
     private void PlayerAveragesButton_Click(object sender, EventArgs e)

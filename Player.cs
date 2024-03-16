@@ -28,8 +28,6 @@ public class Player
 
 }
 
-
-
 public class Meta
 {
     public int Next_cursor { get; set; }

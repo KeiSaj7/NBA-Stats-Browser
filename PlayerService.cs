@@ -24,6 +24,10 @@ public class PlayerService
     private readonly string selectedPlayerKey = "SelectedPlayer";
 
     private readonly string playerAveragesKey = "PlayerAverages";
+
+    private readonly string playerStatsKey = "PlayerStats";
+
+    private readonly string resultsKey = "Results";
     
     private readonly HttpClient _client;
 
@@ -49,7 +53,6 @@ public class PlayerService
                 {
                     break;
                 }
-                var a = response.Meta.Next_cursor;
                 players.AddRange(response.Data);
                 nextCursor = response.Meta.Next_cursor;
             } while (nextCursor != 0);
@@ -66,10 +69,92 @@ public class PlayerService
 
     }
 
-    public async Task CheckLines()
+    public async Task<List<Results>> CheckLines(decimal line)
     {
         int selectedPlayerId = GetSelectedPlayerFromCache().Id;
-        //var response = await _client.GetFromJsonAsync<>($"{_client.BaseAddress}stats?per_page=100&seasons=2023&player_ids[]={selectedPlayerId}");
+        int nextCursor = 0;
+        var playerStats = new List<PlayerStats>();
+        do
+        {
+            var response = await _client.GetFromJsonAsync<PlayerStatsResponse>($"{_client.BaseAddress}stats?per_page=100&player_ids[]={selectedPlayerId}&seasons[]=2023" + (nextCursor != 0 ? $"&cursor={nextCursor}" : ""));
+            if (response?.Data == null || !response.Data.Any())
+            {
+                break;
+            }
+            playerStats.AddRange(response.Data);
+            nextCursor = response.Meta.Next_cursor;
+        } while (nextCursor != 0);
+
+        AddToCache(playerStatsKey, playerStats);
+
+        List<Results> stats = CalcLines(line).ToList();
+        return stats;
+    }
+
+    public IEnumerable<Results> CalcLines(decimal line)
+    {
+        CalcPts(line);
+        var stats = GetFromCache<Results>(this.resultsKey);
+        return stats;
+    }
+
+    public void CalcPts(decimal line)
+    {
+        List<Results> results = new List<Results>();
+
+        var playerStats = GetFromCache<PlayerStats>(playerStatsKey);
+        if (playerStats == null) return;
+        int achieved = 0;
+        int totalGames = 0;
+        foreach(var match in playerStats)
+        {
+            // Check if player was absent
+            if(match.Min == "00") continue;
+            if(match.Pts > line) achieved++;
+            totalGames++;
+        }
+        decimal percentage = (int)((decimal)achieved / totalGames * 100);
+        Results ptsResults = new Results {Stat = "Points" ,TotalGames = totalGames, Achieved = achieved, Percentage = percentage };
+        results.Add(ptsResults);
+        CalcReb(line, results);
+    }
+
+    public void CalcReb(decimal line, List<Results> results)
+    {
+        var playerStats = GetFromCache<PlayerStats>(playerStatsKey);
+        if (playerStats == null) return;
+        int achieved = 0;
+        int totalGames = 0;
+        foreach(var match in playerStats)
+        {
+            // Check if player was absent
+            if(match.Min == "00") continue;
+            if(match.Reb > line) achieved++;
+            totalGames++;
+        }
+        decimal percentage = (int)((decimal)achieved / totalGames * 100);
+        Results rebResults = new Results {Stat = "Rebounds" ,TotalGames = totalGames, Achieved = achieved, Percentage = percentage };
+        results.Add(rebResults);
+        CalcAst(line, results);
+    }
+
+    public void CalcAst(decimal line, List<Results> results)
+    {
+        var playerStats = GetFromCache<PlayerStats>(playerStatsKey);
+        if (playerStats == null) return;
+        int achieved = 0;
+        int totalGames = 0;
+        foreach(var match in playerStats)
+        {
+            // Check if player was absent
+            if(match.Min == "00") continue;
+            if(match.Ast > line) achieved++;
+            totalGames++;
+        }
+        decimal percentage = (int)((decimal)achieved / totalGames * 100);
+        Results astResults = new Results {Stat = "Assists" ,TotalGames = totalGames, Achieved = achieved, Percentage = percentage };
+        results.Add(astResults);
+        AddToCache(resultsKey, results);
     }
 
     public async Task GetPlayerAverages()
@@ -80,8 +165,6 @@ public class PlayerService
         PlayerAverage playerAverages = response.Data.FirstOrDefault();
         AddToCache(playerAveragesKey, playerAverages);
     }
-
-
 
     public Player PlayerValidation(string input)
     {
@@ -97,8 +180,6 @@ public class PlayerService
         }
         return null;
     }
-
-
 
     // Cache methods
     public void AddToCache<T>(string key, T value)
