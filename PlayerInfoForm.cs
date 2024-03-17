@@ -35,7 +35,7 @@ public partial class PlayerInfoForm : Form
         }
     }
 
-    private void PlayerInfoForm_Load(object sender, EventArgs e)    
+    private void PlayerInfoForm_Load(object sender, EventArgs e)
     {
         Player player = _playerService.GetSelectedPlayerFromCache();
         List<Player> players = new List<Player>() { player };

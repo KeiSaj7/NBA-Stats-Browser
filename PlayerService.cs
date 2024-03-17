@@ -87,8 +87,11 @@ public class PlayerService
 
         AddToCache(playerStatsKey, playerStats);
 
-        List<Results> stats = CalcLines(line).ToList();
-        return stats;
+        var stats = CalcLines(line);
+        if (stats == null) return null;
+
+        List<Results> statsList = stats.ToList();
+        return statsList;
     }
 
     public IEnumerable<Results> CalcLines(decimal line)
@@ -103,7 +106,7 @@ public class PlayerService
         List<Results> results = new List<Results>();
 
         var playerStats = GetFromCache<PlayerStats>(playerStatsKey);
-        if (playerStats == null) return;
+        if (playerStats.Count() == 0) return;
         int achieved = 0;
         int totalGames = 0;
         foreach(var match in playerStats)
@@ -122,7 +125,7 @@ public class PlayerService
     public void CalcReb(decimal line, List<Results> results)
     {
         var playerStats = GetFromCache<PlayerStats>(playerStatsKey);
-        if (playerStats == null) return;
+        if (playerStats.Count() == 0) return;
         int achieved = 0;
         int totalGames = 0;
         foreach(var match in playerStats)
@@ -141,7 +144,7 @@ public class PlayerService
     public void CalcAst(decimal line, List<Results> results)
     {
         var playerStats = GetFromCache<PlayerStats>(playerStatsKey);
-        if (playerStats == null) return;
+        if (playerStats.Count() == 0) return;
         int achieved = 0;
         int totalGames = 0;
         foreach(var match in playerStats)
@@ -228,7 +231,7 @@ public class PlayerService
         }
     }
 
-    public void ClearCache()
+    public void ClearPlayerCache()
     {
         _cache.Remove(cacheKey);
     }

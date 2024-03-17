@@ -32,28 +32,18 @@
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             textBox1 = new TextBox();
-            button1 = new Button();
             dataGridView = new DataGridView();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
             SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Font = new Font("Century Gothic", 20.25F);
-            textBox1.Location = new Point(338, 69);
+            textBox1.Font = new Font("Century Gothic", 14.25F);
+            textBox1.Location = new Point(332, 50);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(111, 41);
+            textBox1.Size = new Size(129, 31);
             textBox1.TabIndex = 1;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(355, 116);
-            button1.Name = "button1";
-            button1.Size = new Size(79, 25);
-            button1.TabIndex = 2;
-            button1.Text = "Select";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // dataGridView
             // 
@@ -90,7 +80,7 @@
             dataGridView.EnableHeadersVisualStyles = false;
             dataGridView.GridColor = SystemColors.Control;
             dataGridView.ImeMode = ImeMode.Disable;
-            dataGridView.Location = new Point(12, 147);
+            dataGridView.Location = new Point(12, 184);
             dataGridView.MultiSelect = false;
             dataGridView.Name = "dataGridView";
             dataGridView.ReadOnly = true;
@@ -102,16 +92,32 @@
             dataGridView.RowTemplate.ReadOnly = true;
             dataGridView.ScrollBars = ScrollBars.Horizontal;
             dataGridView.ShowEditingIcon = false;
-            dataGridView.Size = new Size(776, 281);
+            dataGridView.Size = new Size(776, 244);
             dataGridView.TabIndex = 3;
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.MenuHighlight;
+            button1.FlatAppearance.BorderSize = 2;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(238, 100);
+            button1.Name = "button1";
+            button1.Size = new Size(335, 78);
+            button1.TabIndex = 4;
+            button1.TabStop = false;
+            button1.Text = "Select player";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // LineCheckForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView);
             Controls.Add(button1);
+            Controls.Add(dataGridView);
             Controls.Add(textBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "LineCheckForm";
@@ -124,7 +130,7 @@
         #endregion
 
         private TextBox textBox1;
-        private Button button1;
         private DataGridView dataGridView;
+        private Button button1;
     }
 }

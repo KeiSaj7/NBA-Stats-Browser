@@ -1,3 +1,5 @@
+using System.Numerics;
+
 namespace NBA_Stats_Browser;
 
 public partial class Form1 : Form
@@ -12,10 +14,7 @@ public partial class Form1 : Form
 
         this.Load += async (sender, e) =>
         {
-            PlayerChoiceComboBox.Enabled = false;
             await _teamService.GetTeamsAsync();
-            PlayerChoiceComboBox.Enabled = true;
-            PlayerChoiceComboBox.Focus();
 
         };
 
@@ -35,61 +34,53 @@ public partial class Form1 : Form
         f.Show();
     }
 
+
+    private async void SearchWindow_TextChanged(object sender, EventArgs e)
+    {
+
+        if (SearchWindow.TextLength > 2)
+        {
+            string userInput = SearchWindow.Text;
+            var players = await _playerService.GetPlayersByName(userInput);
+            if (players != null)
+            {
+                var info = players.Select(p => new { FullNameAndTeam = p.GetFullNameAndTeam() }).ToList();
+                SearchList.DataSource = info;
+                SearchList.Height = SearchList.Rows.Count * 30;
+            }
+            else
+            {
+                SearchList.Height = 0;
+            }
+        }
+        else if (SearchWindow.TextLength <= 1)
+        {
+            SearchList.Height = 0;
+            _playerService.ClearPlayerCache();
+        }
+    }
+
+    private void SearchList_CellClick(object sender, DataGridViewCellEventArgs e)
+    {
+        DataGridViewRow row = SearchList.Rows[e.RowIndex];
+        SearchWindow.Text = row.Cells[0].Value.ToString();
+    }
+
     private async void button1_Click(object sender, EventArgs e)
     {
-        var input = PlayerChoiceComboBox.Text.Trim();
+        var input = SearchWindow.Text.Trim();
         var player = _playerService.PlayerValidation(input);
 
-        if(player != null)
+        if (player != null)
         {
-            //
-            _playerService.ClearCache();
+            _playerService.ClearPlayerCache();
             _playerService.AddSelectedPlayerToCache(player);
             await _playerService.GetPlayerAverages();
 
             // Form creation
             loadForm(new Form2(_teamService, _playerService));
         }
-        else
-        {
-        }
+        else return;
 
-    }
-
-
-    private async void PlayerChoiceComboBox_TextUpdate(object sender, EventArgs e)
-    {
-        // Get the user input
-        string userInput = PlayerChoiceComboBox.Text;
-
-
-        if (PlayerChoiceComboBox.Text.Length > 2)
-        {
-            
-            PlayerChoiceComboBox.Items.Clear();
-            PlayerChoiceComboBox.SelectionStart = PlayerChoiceComboBox.Text.Length;
-            var players = await _playerService.GetPlayersByName(userInput);
-            if (players != null)
-            {
-                // Show players first and last name in the combobox
-                foreach (var player in players)
-                {
-                    PlayerChoiceComboBox.Items.Add(player.GetFullNameAndTeam());
-                }
-                PlayerChoiceComboBox.DroppedDown = true;
-                PlayerChoiceComboBox.SelectedIndex = -1;
-                PlayerChoiceComboBox.Text = userInput;
-                PlayerChoiceComboBox.SelectionStart = PlayerChoiceComboBox.Text.Length;
-            }
-        }
-        else
-        {
-            PlayerChoiceComboBox.Items.Clear();
-            _playerService.ClearCache();
-            PlayerChoiceComboBox.SelectedIndex = -1;
-            PlayerChoiceComboBox.DroppedDown = false;
-            PlayerChoiceComboBox.SelectionStart = PlayerChoiceComboBox.Text.Length;
-
-        }
     }
 }
