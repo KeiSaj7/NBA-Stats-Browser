@@ -35,7 +35,9 @@
             TeamInfoButton = new Button();
             panelTop = new Panel();
             panelMain = new Panel();
+            textBox1 = new TextBox();
             panelSide.SuspendLayout();
+            panelTop.SuspendLayout();
             SuspendLayout();
             // 
             // PlayerInfoButton
@@ -110,6 +112,7 @@
             // panelTop
             // 
             panelTop.BackColor = SystemColors.HotTrack;
+            panelTop.Controls.Add(textBox1);
             panelTop.Dock = DockStyle.Top;
             panelTop.Location = new Point(0, 0);
             panelTop.Name = "panelTop";
@@ -124,6 +127,20 @@
             panelMain.Size = new Size(933, 561);
             panelMain.TabIndex = 6;
             // 
+            // textBox1
+            // 
+            textBox1.BackColor = SystemColors.HotTrack;
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            textBox1.ForeColor = Color.White;
+            textBox1.Location = new Point(-48, 3);
+            textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
+            textBox1.Size = new Size(381, 30);
+            textBox1.TabIndex = 0;
+            textBox1.Text = "NBA Stats Browser";
+            textBox1.TextAlign = HorizontalAlignment.Center;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -136,6 +153,8 @@
             Name = "Form2";
             Text = "Form2";
             panelSide.ResumeLayout(false);
+            panelTop.ResumeLayout(false);
+            panelTop.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -148,5 +167,6 @@
         private Button LineCheckButton;
         private Button PlayerAveragesButton;
         private Button TeamInfoButton;
+        private TextBox textBox1;
     }
 }

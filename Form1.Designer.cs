@@ -28,12 +28,13 @@ partial class Form1
     /// </summary>
     private void InitializeComponent()
     {
-        DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-        DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+        DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+        DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
         button1 = new Button();
         panelMain = new Panel();
         SearchList = new DataGridView();
         SearchWindow = new TextBox();
+        textBox1 = new TextBox();
         panelMain.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)SearchList).BeginInit();
         SuspendLayout();
@@ -55,6 +56,7 @@ partial class Form1
         // 
         // panelMain
         // 
+        panelMain.Controls.Add(textBox1);
         panelMain.Controls.Add(SearchList);
         panelMain.Controls.Add(SearchWindow);
         panelMain.Controls.Add(button1);
@@ -73,24 +75,24 @@ partial class Form1
         SearchList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         SearchList.BackgroundColor = Color.White;
         SearchList.CellBorderStyle = DataGridViewCellBorderStyle.None;
-        dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-        dataGridViewCellStyle1.BackColor = SystemColors.Control;
-        dataGridViewCellStyle1.Font = new Font("Century Gothic", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 238);
-        dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-        dataGridViewCellStyle1.SelectionBackColor = SystemColors.Control;
-        dataGridViewCellStyle1.SelectionForeColor = SystemColors.WindowText;
-        dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-        SearchList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+        dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
+        dataGridViewCellStyle3.BackColor = SystemColors.Control;
+        dataGridViewCellStyle3.Font = new Font("Century Gothic", 14.25F, FontStyle.Italic, GraphicsUnit.Point, 238);
+        dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+        dataGridViewCellStyle3.SelectionBackColor = SystemColors.Control;
+        dataGridViewCellStyle3.SelectionForeColor = SystemColors.WindowText;
+        dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+        SearchList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
         SearchList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
         SearchList.ColumnHeadersVisible = false;
-        dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-        dataGridViewCellStyle2.BackColor = SystemColors.Window;
-        dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-        dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
-        dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-        dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-        dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-        SearchList.DefaultCellStyle = dataGridViewCellStyle2;
+        dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
+        dataGridViewCellStyle4.BackColor = SystemColors.Window;
+        dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F);
+        dataGridViewCellStyle4.ForeColor = SystemColors.ControlText;
+        dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
+        dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+        dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
+        SearchList.DefaultCellStyle = dataGridViewCellStyle4;
         SearchList.Location = new Point(432, 204);
         SearchList.Name = "SearchList";
         SearchList.RowHeadersVisible = false;
@@ -108,6 +110,20 @@ partial class Form1
         SearchWindow.Size = new Size(335, 31);
         SearchWindow.TabIndex = 2;
         SearchWindow.TextChanged += SearchWindow_TextChanged;
+        // 
+        // textBox1
+        // 
+        textBox1.BackColor = SystemColors.MenuHighlight;
+        textBox1.BorderStyle = BorderStyle.None;
+        textBox1.Font = new Font("Century Gothic", 36F, FontStyle.Bold, GraphicsUnit.Point, 238);
+        textBox1.ForeColor = Color.White;
+        textBox1.Location = new Point(334, 44);
+        textBox1.Name = "textBox1";
+        textBox1.ReadOnly = true;
+        textBox1.Size = new Size(545, 59);
+        textBox1.TabIndex = 4;
+        textBox1.Text = "NBA Stats Browser";
+        textBox1.TextAlign = HorizontalAlignment.Center;
         // 
         // Form1
         // 
@@ -130,4 +146,5 @@ partial class Form1
     private Panel panelMain;
     private DataGridView SearchList;
     private TextBox SearchWindow;
+    private TextBox textBox1;
 }
