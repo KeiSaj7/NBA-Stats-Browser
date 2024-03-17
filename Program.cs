@@ -36,7 +36,7 @@ namespace NBA_Stats_Browser
             services.AddHttpClient("APIClient",client =>
             {
                 client.BaseAddress = new Uri("https://api.balldontlie.io/v1/");
-                client.DefaultRequestHeaders.Add("Authorization", "29d1f5cd-8fcf-44ea-a77f-1c5df888a0e4");
+                client.DefaultRequestHeaders.Add("Authorization", "API_KEY");
             });
 
         }
