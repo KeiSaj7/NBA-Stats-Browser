@@ -116,8 +116,8 @@ public class PlayerService
             if(match.Pts > line) achieved++;
             totalGames++;
         }
-        decimal percentage = (int)((decimal)achieved / totalGames * 100);
-        Results ptsResults = new Results {Stat = "Points" ,TotalGames = totalGames, Achieved = achieved, Percentage = percentage };
+        string percentage = ((int)((decimal)achieved / totalGames * 100)).ToString();
+        Results ptsResults = new Results {Stat = "Points" ,TotalGames = totalGames, Achieved = achieved, Percentage = percentage + '%' };
         results.Add(ptsResults);
         CalcReb(line, results);
     }
@@ -135,8 +135,8 @@ public class PlayerService
             if(match.Reb > line) achieved++;
             totalGames++;
         }
-        decimal percentage = (int)((decimal)achieved / totalGames * 100);
-        Results rebResults = new Results {Stat = "Rebounds" ,TotalGames = totalGames, Achieved = achieved, Percentage = percentage };
+        string percentage = ((int)((decimal)achieved / totalGames * 100)).ToString();
+        Results rebResults = new Results {Stat = "Rebounds" ,TotalGames = totalGames, Achieved = achieved, Percentage = percentage + '%' };
         results.Add(rebResults);
         CalcAst(line, results);
     }
@@ -154,8 +154,8 @@ public class PlayerService
             if(match.Ast > line) achieved++;
             totalGames++;
         }
-        decimal percentage = (int)((decimal)achieved / totalGames * 100);
-        Results astResults = new Results {Stat = "Assists" ,TotalGames = totalGames, Achieved = achieved, Percentage = percentage };
+        string percentage = ((int)((decimal)achieved / totalGames * 100)).ToString();
+        Results astResults = new Results {Stat = "Assists" ,TotalGames = totalGames, Achieved = achieved, Percentage = percentage + '%' };
         results.Add(astResults);
         AddToCache(resultsKey, results);
     }

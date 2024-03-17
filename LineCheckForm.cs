@@ -23,8 +23,8 @@ public partial class LineCheckForm : Form
     {
         bool valid = decimal.TryParse(this.textBox1.Text, out decimal result);
         if (!valid) return;
-        this.textBox1.Text = "SUCCESS";
         List<Results> results = await this._playerService.CheckLines(result);
         this.dataGridView.DataSource = results;
+        this.textBox1.Text = "";
     }
 }

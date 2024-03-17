@@ -32,9 +32,9 @@ partial class Form1
         DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
         button1 = new Button();
         panelMain = new Panel();
+        textBox1 = new TextBox();
         SearchList = new DataGridView();
         SearchWindow = new TextBox();
-        textBox1 = new TextBox();
         panelMain.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)SearchList).BeginInit();
         SuspendLayout();
@@ -65,6 +65,20 @@ partial class Form1
         panelMain.Name = "panelMain";
         panelMain.Size = new Size(1184, 561);
         panelMain.TabIndex = 2;
+        // 
+        // textBox1
+        // 
+        textBox1.BackColor = SystemColors.MenuHighlight;
+        textBox1.BorderStyle = BorderStyle.None;
+        textBox1.Font = new Font("Century Gothic", 36F, FontStyle.Bold, GraphicsUnit.Point, 238);
+        textBox1.ForeColor = Color.White;
+        textBox1.Location = new Point(334, 44);
+        textBox1.Name = "textBox1";
+        textBox1.ReadOnly = true;
+        textBox1.Size = new Size(545, 59);
+        textBox1.TabIndex = 4;
+        textBox1.Text = "NBA Stats Browser";
+        textBox1.TextAlign = HorizontalAlignment.Center;
         // 
         // SearchList
         // 
@@ -111,20 +125,6 @@ partial class Form1
         SearchWindow.TabIndex = 2;
         SearchWindow.TextChanged += SearchWindow_TextChanged;
         // 
-        // textBox1
-        // 
-        textBox1.BackColor = SystemColors.MenuHighlight;
-        textBox1.BorderStyle = BorderStyle.None;
-        textBox1.Font = new Font("Century Gothic", 36F, FontStyle.Bold, GraphicsUnit.Point, 238);
-        textBox1.ForeColor = Color.White;
-        textBox1.Location = new Point(334, 44);
-        textBox1.Name = "textBox1";
-        textBox1.ReadOnly = true;
-        textBox1.Size = new Size(545, 59);
-        textBox1.TabIndex = 4;
-        textBox1.Text = "NBA Stats Browser";
-        textBox1.TextAlign = HorizontalAlignment.Center;
-        // 
         // Form1
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
@@ -132,9 +132,11 @@ partial class Form1
         BackColor = SystemColors.MenuHighlight;
         ClientSize = new Size(1184, 561);
         Controls.Add(panelMain);
+        FormBorderStyle = FormBorderStyle.FixedSingle;
+        MaximizeBox = false;
         Name = "Form1";
+        ShowIcon = false;
         StartPosition = FormStartPosition.CenterScreen;
-        Text = "Form1";
         panelMain.ResumeLayout(false);
         panelMain.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)SearchList).EndInit();

@@ -70,7 +70,7 @@ public class Results
     public string Stat { get; set; }
     public int TotalGames { get; set; }
     public int Achieved { get; set; }
-    public decimal Percentage { get; set; }
+    public string Percentage { get; set; }
 }
 
 public class PlayerStatsResponse
